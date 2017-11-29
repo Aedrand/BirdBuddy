@@ -1,0 +1,48 @@
+<RelativeLayout
+    android:id="@+id/single_bird_frag"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.riggsandrew.ariggs.birdlisttest.SingleBirdFragment"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/single_bird_frag_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:src="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/single_bird_frag_name"
+        android:text="Bird Name Once Again"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/single_bird_frag_image"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/single_bird_frag_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/single_bird_frag_name"
+        android:gravity="center"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/single_bird_frag_link"
+        android:text="Learn More at All About Birds"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="19dp" />
+
+</RelativeLayout>
