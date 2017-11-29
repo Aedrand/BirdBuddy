@@ -1,4 +1,4 @@
-package com.skidmore.birdboys.birdbuddy;
+package com.birdboys.skidmore.birdbuddy;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.skidmore.birdboys.birdbuddy", appContext.getPackageName());
+        assertEquals("com.birdboys.skidmore.birdbuddy", appContext.getPackageName());
     }
 }

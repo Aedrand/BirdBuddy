@@ -1,4 +1,4 @@
-package com.skidmore.birdboys.birdbuddy;
+package com.birdboys.skidmore.birdbuddy;
 
 import org.junit.Test;
 
