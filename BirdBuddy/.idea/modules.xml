@@ -3,11 +3,13 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BirdBuddy.iml" filepath="$PROJECT_DIR$/BirdBuddy.iml" />
-      <module fileurl="file://E:\GIT_REPOS\berd\BirdBuddy\BirdBuddy\BirdBuddy.iml" filepath="E:\GIT_REPOS\berd\BirdBuddy\BirdBuddy\BirdBuddy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BirdBuddy.iml" filepath="$PROJECT_DIR$/BirdBuddy.iml" />
       <module fileurl="file://E:\GIT REPOS\BirdBuddy\BirdBuddy\BirdBuddy.iml" filepath="E:\GIT REPOS\BirdBuddy\BirdBuddy\BirdBuddy.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://E:\GIT REPOS\BirdBuddy\BirdBuddy\app\app.iml" filepath="E:\GIT REPOS\BirdBuddy\BirdBuddy\app\app.iml" />
+      <module fileurl="file://E:\GIT_REPOS\berd\BirdBuddy\BirdBuddy\BirdBuddy.iml" filepath="E:\GIT_REPOS\berd\BirdBuddy\BirdBuddy\BirdBuddy.iml" />
       <module fileurl="file://E:\GIT_REPOS\berd\BirdBuddy\BirdBuddy\app\app.iml" filepath="E:\GIT_REPOS\berd\BirdBuddy\BirdBuddy\app\app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
 </project>
