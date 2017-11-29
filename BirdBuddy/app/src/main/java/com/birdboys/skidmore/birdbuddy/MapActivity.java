@@ -1,5 +1,6 @@
 package com.birdboys.skidmore.birdbuddy;
 
+import android.os.AsyncTask;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 
@@ -10,9 +11,13 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import java.util.List;
+
 public class MapActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
+    private List<Bird> birdList;
+    private List<Sighting> sightingList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,5 +47,18 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
         LatLng sydney = new LatLng(-34, 151);
         mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+    }
+
+    private class FetchBirdTask extends AsyncTask<Void,Void,List<List>> {
+        @Override
+        protected List<List> doInBackground(Void... params) {
+            return new Ebirdr().fetchNewBirds();
+        }
+
+        @Override
+        protected void onPostExecute(List<List> birdLists) {
+            birdList = birdLists.get(0);
+            sightingList = birdLists.get(1);
+        }
     }
 }
