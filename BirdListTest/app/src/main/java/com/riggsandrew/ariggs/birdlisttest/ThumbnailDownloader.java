@@ -1,15 +1,12 @@
 package com.riggsandrew.ariggs.birdlisttest;
 
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Message;
 import android.util.Log;
 
-import java.io.IOException;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
@@ -17,6 +14,11 @@ import java.util.concurrent.ConcurrentMap;
  * Created by ariggs on 11/20/17.
  */
 
+/**
+ * Asynchronous downloader of thumbnails, using HandlerThread.
+ * @param <T> Abstract type, will likely be a RecyclerView Holder
+ * @see HandlerThread
+ */
 public class ThumbnailDownloader<T> extends HandlerThread{
     private static final String TAG = "ThumbnailDownloader";
     private static final int MESSAGE_DOWNLOAD = 0;

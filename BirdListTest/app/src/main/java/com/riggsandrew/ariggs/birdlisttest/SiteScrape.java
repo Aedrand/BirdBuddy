@@ -6,7 +6,6 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.AsyncTask;
-import android.os.SystemClock;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
