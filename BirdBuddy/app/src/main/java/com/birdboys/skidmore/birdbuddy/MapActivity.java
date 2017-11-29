@@ -43,10 +43,30 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
+        double min = .99999;
+        double max = 1.00002;
+
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        LatLng urhere = new LatLng(43.097348, -73.784180);
+        LatLng test1 = new LatLng(43.0961323, -73.7844899);
+        LatLng test2 = new LatLng(43.0946822, -73.767457);
+        double jitterLng = 43.0946822 *(Math.random()*(max-min)+min);
+        double jitterLat = -73.767457 *(Math.random()*(max-min)+min);
+
+        System.out.print("43.0946822 vs "+jitterLng);
+        System.out.print("-73.767457 vs "+jitterLat);
+
+
+        LatLng test3 = new LatLng(jitterLng, jitterLat);
+
+        //need to add jitter to each value or they will stay on top of one another
+
+        mMap.addMarker(new MarkerOptions().position(test1).title("Black-capped Chickadee"));
+        mMap.addMarker(new MarkerOptions().position(test2).title("American Crow"));
+        mMap.addMarker(new MarkerOptions().position(test3).title("Blue Jay"));
+
+
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(urhere, 14.0f));
     }
 
     private class FetchBirdTask extends AsyncTask<Void,Void,List<List>> {
